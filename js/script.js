@@ -1,5 +1,3 @@
-let current_status = null;
-
 //On Load
 // window.onload = function () {
 //   const apiUrl =
@@ -38,7 +36,7 @@ document.getElementById("clock-btn").addEventListener("click", function () {
     })
     .then((data) => {
       console.log("Success:", data);
-      current_status = data.in;
+      let current_status = data.in;
       console.log(current_status);
     })
     .catch((error) => {
